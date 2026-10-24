@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Repairable product architecture</title>
+  <desc id="desc">An abstract phone outline with separate screen, battery, camera, and port modules.</desc>
+  <rect width="800" height="600" fill="#EFE7DA"/>
+  <rect x="302" y="84" width="196" height="432" rx="30" fill="#5D304E"/>
+  <rect x="319" y="105" width="162" height="350" rx="17" fill="#F7F2E8"/>
+  <rect x="344" y="145" width="112" height="233" rx="8" fill="#C6B7A8"/>
+  <circle cx="400" cy="421" r="9" fill="#A95649"/>
+  <path d="M156 154h100l24 24m364 0 24-24h-96M157 410h119l26-25m364 25H551l-25-25" fill="none" stroke="#5D304E" stroke-width="4" stroke-dasharray="7 8"/>
+  <rect x="93" y="126" width="118" height="58" rx="8" fill="#A95649"/>
+  <rect x="589" y="126" width="118" height="58" rx="8" fill="#F7F2E8" stroke="#5D304E" stroke-width="4"/>
+  <rect x="93" y="382" width="118" height="58" rx="8" fill="#F7F2E8" stroke="#5D304E" stroke-width="4"/>
+  <rect x="589" y="382" width="118" height="58" rx="8" fill="#A95649"/>
+  <path d="M125 155h55m451 0h50m-501 256h55m451 0h50" stroke="#FFF9F1" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="400" cy="72" r="6" fill="#A95649"/>
+</svg>

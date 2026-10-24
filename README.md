@@ -26,7 +26,15 @@ devenv shell -- rsvg-convert -w 1200 -h 630 -o static/images/social-card.png sta
 
 Devenv locks siteman and Nixpkgs in `devenv.lock`. Hugo locks Roxo Flex in `go.mod` and `go.sum`. The theme snapshot lives in `_vendor/`.
 
-The siteman input is private, so local contributors need access to the Bullish Design repository. GitHub Actions also needs a `SITEMAN_READ_TOKEN` repository secret. Give that fine-grained token read-only access to the siteman repository.
+The siteman input is private, so local contributors need access to the Bullish Design repository. Add a fine-grained `SITEMAN_READ_TOKEN` repository secret with read-only access to the siteman repository. GitHub Actions then runs `siteman-check` and builds the site from source.
+
+Until that secret exists, GitHub Actions deploys the verified Siteman snapshot in `pages-static/`. Refresh this snapshot after a local build when you need to publish before the secret is available:
+
+```sh
+devenv shell -- siteman-build
+rm -rf pages-static
+cp -a public pages-static
+```
 
 ```sh
 devenv shell -- siteman-serve

@@ -23,20 +23,13 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      SITEMAN_READ_TOKEN: ${{ secrets.SITEMAN_READ_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-
-      - name: Confirm access to the private siteman input
-        env:
-          SITEMAN_READ_TOKEN: ${{ secrets.SITEMAN_READ_TOKEN }}
-        run: |
-          if [ -z "$SITEMAN_READ_TOKEN" ]; then
-            echo "Set SITEMAN_READ_TOKEN with read-only access to Bullish-Design/siteman."
-            exit 1
-          fi
 
       - name: Install Nix
         uses: cachix/install-nix-action@v31
@@ -58,11 +51,20 @@ jobs:
         id: pages
         uses: actions/configure-pages@v6
 
-      - name: Check the site
+      - name: Check the site with siteman
+        if: ${{ env.SITEMAN_READ_TOKEN != '' }}
         run: devenv shell -- siteman-check
 
       - name: Build with siteman
+        if: ${{ env.SITEMAN_READ_TOKEN != '' }}
         run: devenv shell -- siteman-build --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Use the verified Siteman snapshot
+        if: ${{ env.SITEMAN_READ_TOKEN == '' }}
+        run: |
+          echo "SITEMAN_READ_TOKEN is not set; deploy the verified Siteman build in pages-static/."
+          mkdir -p public
+          cp -a pages-static/. public/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
