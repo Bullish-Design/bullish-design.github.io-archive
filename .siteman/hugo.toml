@@ -1,0 +1,74 @@
+baseURL = "https://bullish-design.github.io/"
+title = "Bullish Design"
+locale = "en-us"
+
+# Keep Hugo machinery in .siteman. Keep authored content at the repository root.
+layoutDir = ".siteman/layouts"
+archetypeDir = ".siteman/archetypes"
+themesDir = ".siteman/themes"
+resourceDir = ".siteman/resources"
+publishDir = "public"
+theme = ["github.com/Bullish-Design/roxo-flex", "siteman-default"]
+disableKinds = ["taxonomy", "term"]
+
+[params]
+business_name = "Bullish Design"
+description = "Mechanical and industrial product design consulting, with clear notes on the products and innovations around us."
+logo = "images/bullish-mark.svg"
+footer_logo = "images/bullish-mark.svg"
+favicon = "images/bullish-mark.svg"
+social_image = "images/social-card.png"
+custom_css = "css/site.css"
+copyright = "© 2026 Bullish Design"
+
+[params.contact]
+github_url = "https://github.com/Bullish-Design"
+
+[params.style]
+background = "#F7F2E8"
+surface = "#EFE7DA"
+text = "#2E2730"
+muted = "#625A60"
+border = "#C6B7A8"
+accent = "#5D304E"
+on_accent = "#FFF9F1"
+font_body = "system-ui, sans-serif"
+font_heading = "Georgia, serif"
+type_scale = "1.24"
+spacing = "1.1rem"
+button_radius = "0.25rem"
+hero_image_radius = "0.5rem"
+image_filter = "none"
+icon_size = "1.15rem"
+
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/Bullish-Design"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Work"
+url = "/portfolio/"
+weight = 3
+
+[[menu.main]]
+name = "Design notes"
+url = "/notes/"
+weight = 4
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 5
+
+[markup.highlight]
+noClasses = false

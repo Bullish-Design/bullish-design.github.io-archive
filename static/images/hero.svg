@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">Product design study</title>
+  <desc id="desc">Abstract assembly diagram with curved product forms, a hinge, and coral alignment marks.</desc>
+  <rect width="900" height="675" rx="28" fill="#EFE7DA"/>
+  <path d="M53 550h785M91 594h716M126 80v520M775 80v520" fill="none" stroke="#C6B7A8" stroke-width="2" stroke-dasharray="4 12"/>
+  <circle cx="466" cy="324" r="228" fill="#F7F2E8"/>
+  <path d="M270 358c38-123 117-192 222-192 77 0 137 38 175 109l-49 31c-27-48-68-74-124-74-77 0-137 48-167 139l-57-13Z" fill="#5D304E"/>
+  <path d="M320 420c73 39 171 36 252-6l27 53c-100 53-220 55-314 5l35-52Z" fill="#A95649"/>
+  <path d="M337 319c26-21 53-33 82-37m130 22c14 9 26 21 36 36" fill="none" stroke="#FFF9F1" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="468" cy="325" r="35" fill="#F7F2E8" stroke="#2E2730" stroke-width="10"/>
+  <circle cx="468" cy="325" r="11" fill="#A95649"/>
+  <path d="M468 260v-82m0 293v-66M405 325h-90m280 0h-79" fill="none" stroke="#625A60" stroke-width="2" stroke-dasharray="7 8"/>
+  <path d="M592 186h85m-42-42v85M235 473h74m-37-37v74" fill="none" stroke="#A95649" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="676" cy="184" r="8" fill="#A95649"/>
+  <circle cx="271" cy="473" r="8" fill="#A95649"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Siteman publishing flow</title>
+  <desc id="desc">A source file, a Hugo build step, and a finished page linked in one line.</desc>
+  <rect width="800" height="600" fill="#EFE7DA"/>
+  <path d="M136 294h150m228 0h150" fill="none" stroke="#5D304E" stroke-width="6" stroke-linecap="round"/>
+  <path d="m272 278 20 16-20 16m226-32 20 16-20 16" fill="none" stroke="#A95649" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="80" y="180" width="144" height="228" rx="8" fill="#F7F2E8" stroke="#5D304E" stroke-width="4"/>
+  <path d="M111 229h82m-82 31h82m-82 31h64m-64 55h82" stroke="#C6B7A8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="111" cy="356" r="5" fill="#A95649"/>
+  <circle cx="133" cy="356" r="5" fill="#A95649"/>
+  <rect x="328" y="178" width="144" height="232" rx="72" fill="#5D304E"/>
+  <circle cx="400" cy="294" r="47" fill="#F7F2E8"/>
+  <path d="M383 294h34m-17-17v34" stroke="#A95649" stroke-width="7" stroke-linecap="round"/>
+  <rect x="576" y="180" width="144" height="228" rx="8" fill="#F7F2E8" stroke="#5D304E" stroke-width="4"/>
+  <rect x="594" y="198" width="108" height="62" rx="4" fill="#A95649"/>
+  <path d="M594 287h108m-108 24h78m-78 48h108" stroke="#C6B7A8" stroke-width="8" stroke-linecap="round"/>
+</svg>

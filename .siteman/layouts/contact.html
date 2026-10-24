@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="section page-top">
+  <div class="container contact-grid">
+    <div>
+      <h1>{{ .Title }}</h1>
+      <div class="prose">{{ .Content }}</div>
+    </div>
+    <div>
+      <p class="eyebrow">Product design consulting</p>
+      <p>Send a message through the Bullish Design GitHub profile.</p>
+      <a class="button" href="{{ site.Params.contact.github_url | safeURL }}" rel="noopener noreferrer">Open GitHub profile</a>
+    </div>
+  </div>
+</section>
+{{ end }}

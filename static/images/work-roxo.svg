@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Roxo Flex theme study</title>
+  <desc id="desc">Layered page shapes with a plum frame, ivory panels, and coral index marks.</desc>
+  <rect width="800" height="600" fill="#EFE7DA"/>
+  <rect x="122" y="80" width="510" height="414" rx="12" fill="#C6B7A8"/>
+  <rect x="153" y="110" width="510" height="414" rx="12" fill="#5D304E"/>
+  <rect x="184" y="141" width="432" height="350" rx="5" fill="#F7F2E8"/>
+  <path d="M184 207h432" stroke="#C6B7A8" stroke-width="2"/>
+  <circle cx="211" cy="174" r="7" fill="#A95649"/>
+  <circle cx="234" cy="174" r="7" fill="#C6B7A8"/>
+  <circle cx="257" cy="174" r="7" fill="#C6B7A8"/>
+  <rect x="222" y="244" width="160" height="200" rx="4" fill="#EFE7DA"/>
+  <path d="M416 260h153M416 287h117M416 341h153M416 368h127M416 422h153" stroke="#5D304E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M241 409c25-65 67-99 124-102v102H241Z" fill="#A95649"/>
+  <circle cx="368" cy="282" r="15" fill="#5D304E"/>
+</svg>
